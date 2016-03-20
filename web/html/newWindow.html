@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<script>
+    //打开一个新窗口
+    function openWindow(){
+//        _self:替换当前页面，_blank:新增一个窗口
+        var childWin=window.open("bianliang.html","blank");
+            open("newWindow.html","blank","width=200,height=100;location=no");
+        childWin.document.getElementById("message").innerHTML="你好";
+    }
+
+    function openChild(){
+        childWin = window.open("childWindow.html","_blank");
+        childWin.document.getElementById("message").innerHTML="你好"; //子窗口的document还有没生成
+    }
+
+    function sendToChild(){
+        var info = document.getElementById("toChildInfo").value;
+        childWin.document.getElementById("message").innerHTML=info;
+    }
+
+</script>
+</head>
+<body>
+<input type="button" value="打开一个新窗口" onclick="openWindow()">
+<input type="button" value="打开一个子窗口" onclick="openChild()"/>
+<div>
+    发送给子窗口的消息<input type="text" id="toChildInfo">
+    <input type="button" value="发送" onclick="sendToChild()">
+</div>
+<div>
+    来自子窗口的消息：<span id = "message"></span>
+</div>
+</body>
+</html>

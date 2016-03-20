@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function sendMess(){
+            alert(val);
+            var val = document.getElementById("toParInfo").value;
+            opener.document.getElementById("message").innerHTML = val;
+        }
+
+        function test(){
+            var res = "2"+1;
+            alert(typeof res); //number类型
+            alert(res);
+        }
+    </script>
+</head>
+<body>
+<div>
+来自父窗口的消息：<span id="message"></span>
+</div>
+发送消息给父窗口：<input type="text" id="toParInfo">
+<input type="button" value="发送" onclick="sendMess()">
+
+</body>
+</html>

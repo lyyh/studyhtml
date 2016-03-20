@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script language="JavaScript" src="/js/dom.js"></script>
+</head>
+<script>
+    a = 1; //全局变量
+    function test(){
+        alert("全局变量a:"+a);
+        if(typeof b == "undefined"){ //b没有赋值，typeof b 返回"undefined"
+            alert("没有声明");
+            console.log("没有声明"); //输出在firbug上
+        }
+        alert("test()中未赋值的全局变量b:"+b); //b没有声明报错
+        b =2; //给b赋值，执行到这里时成为全局变量
+    }
+    function test1(){
+        alert("test1()中已赋值的全局变量的b:"+b); //没有声明，报错
+    }
+
+    function test2(){
+        alert("test2()中未赋值的局部变量b："+b); //在下面声明了b，变成局部变量
+        var b = 1; //Javascript在执行前会对整个脚本文件的声明部分做完整分析(包括局部变量)，从而确定实变量的作用域
+        alert("test2()中已赋值的局部变量b："+b);
+    }
+
+    function test3(){
+        alert(a);
+       var  a = 3;
+        alert("test3()中的a："+a);
+    }
+
+    function test4(){
+        var value;
+        alert(value==undefined); //返回true,value的值为undefine
+        alert(null == document.getElementById('notExistElement')); //返回true,对象不存在
+        alert(typeof null); //null的类型为object
+        alert(typeof undefined); //undefined的类型为undefined
+        alert(null==undefined); //undefined是从null派生出来的，所以把它们定义为相等的
+    }
+
+    function test5(){
+        x; //没有声明
+        alert(x);
+    }
+    function test6(){
+        alert("全局变量x:"+x);
+    }
+//    test5();
+//    test();
+//    test1();
+//    test2();
+    test3();
+//    test5();
+//    test6();
+    alert("全局区域的()a："+a);
+</script>
+<body>
+<span>一个简单的时钟：<span id = "myTime"></span></span>
+<input type="button" value="停止" onclick="stopTime()"/>
+<img src="/static/image/1.jpg" id="image">
+<input type="button" value="测试" onclick="test()">
+</body>
+</html>

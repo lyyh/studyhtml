@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    var n = 1;
+    window.onload = run;
+    //进行轮播，5秒后停止，再过5秒后轮播
+    function changePhoto(){
+        var photo = document.getElementById("image");
+        photo.src = "/static/image/"+((n++%3)+1)+".jpg";
+        if(n%5==0){
+            clearInterval(begin);
+            //5秒后执行一次
+            setTimeout("run()",5000);
+        }
+    }
+    //开始轮播
+    function run(){
+        //begin为全局变量
+        begin = setInterval("changePhoto()",1000);
+    }
+</script>
+<body>
+<img src="/static/image/1.jpg" id="image">
+</body>
+</html>
