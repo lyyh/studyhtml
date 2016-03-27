@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    function test() {
+        console.log("中文");
+        var val = 2;
+        switch (val) {
+            case 1:alert("你输入的是："+val);break;
+            case 2:alert("你输入的是："+val);break;
+        }
+    }
+
+    function Person(){
+        this.name="lyh";
+        this.age="20";
+    }
+
+    function testArray(){
+        var id1 = "886";
+        var id2 = 887;
+        var person = new Person();
+        var array = [id1,id2,person];
+        for(var i = 0;i<array.length;i++){
+            console.log(array[i]);
+        }
+        console.log("-------------动态添加数组的大小----------")
+        console.log("添加array[3]："+3);
+        array[3]=3;
+        console.log("添加array[4]："+4);
+        array[4]=4;
+        for(var i = 0;i<array.length;i++){
+            console.log(array[i]);
+        }
+    }
+
+</script>
+<body>
+<input type="button" value="点击" onclick="test(1)">
+<input type="button" value="测试array" onclick="testArray()">
+</body>
+</html>

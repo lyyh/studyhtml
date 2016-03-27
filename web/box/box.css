@@ -1,0 +1,68 @@
+body{
+    border: 1px solid red;
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto; /*0表示上下边框为0,auto表示左右居中*/
+}
+.box1{
+    border: 1px solid blue;
+    width:800px;
+    height: 200px;
+    margin-top: 100px;
+    /*padding-top: 100px;*/
+    /*padding-left:100px;*/
+}
+.box1 img{
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+/*用于控制图片区域的位置*/
+.box2{
+    width: 600px;
+    height: 400px;
+    border:1px solid blue ;
+}
+/*ulface用于控制图片区域的宽度和高度*/
+.ulface {
+    width: 500px;
+    height: 326px;
+    border: 1px solid black;
+    padding-left: 0px;
+    list-style-type: none;
+}
+/*设置控制单个图片区域的大小*/
+.ulface li{
+    width: 60px;
+    height: 80px;
+    border: 1px solid red;
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left;/*左浮动*/
+}
+/* 控制单个图片的大小*/
+.ulface img{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.ulface a{
+    font-size: 12pt;
+    margin-left: 10px;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+
+.fontCenter{
+ text-align: center;
+}

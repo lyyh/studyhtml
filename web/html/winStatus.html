@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var spaceNum = 0;
+        var dir = 1;
+        function move(){
+            var spaceMy = "";
+            spaceNum = spaceNum + 1*dir;
+            if(spaceNum>50||spaceNum<0){
+                dir = dir * -1;
+            }
+            for(var i = 0;i<spaceNum;i++){
+                spaceMy = spaceMy+" ";
+            }
+            window.status  = spaceMy + "世界你好";
+        }
+//        setInterval("move()",100);
+        window.status="hello world";
+    </script>
+</head>
+<body>
+
+</body>
+</html>
