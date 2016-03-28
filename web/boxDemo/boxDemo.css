@@ -1,131 +1,137 @@
-body{
+body {
     width: 800px;
     height: 1000px;
     margin: 0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    font-size: 12px; /*没有特殊处理时字体默认大小为12px*/
 }
+
 .bo-child{
     width: 600px;
     height: 800px;
     margin-left: 100px;
     margin-top: 100px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 /*相关人物和展开*/
-.per{
+.title{
     margin-top: 5px;
 }
-.per span{
-    margin-left: 50px;
+.title span{
+    display: block;
+    margin-left: 43px;
 }
-.per a{
-    margin-left: 410px;
+.title a{
+     float: right;
+     margin-right: 50px;
 }
-.per a:link{
+.title a:link{
     text-decoration: none;
     color: black;
 }
-.per a:hover{
+.title a:hover{
     text-decoration: underline;
     color: blue;
 }
-.per-photo{
+.photo{
     width: 545px;
-    height: 180px;
+    /*height: 200px;*/ /*?????*/
     margin-top: 10px;
     margin-left: 30px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    overflow: hidden; /*隐藏浮动*/
 }
-.ul-character{
+.ul-face{
     width: 546px;
     height: 180px;
     list-style-type: none;
-    border:1px solid blue;
+    /*border:1px solid blue;*/
     padding-left: 0px;
     margin-top: 0px;
 }
-.ul-character li{
+.ul-face li{
     width:180px;
     height:180px;
     float: left;
-    border: 1px solid cadetblue;
+    /*border: 1px solid cadetblue;*/
+    text-align: center;
 }
-.ul-character img{
+.ul-face img{
     width: 150px;
     height: 150px;
-    margin-left: 15px;
 }
-.ul-character a{
+.ul-face a{
     font-size: 12pt;
-    margin-left: 70px;
 }
-.ul-character a:link{
+.ul-face a:link{
     text-decoration: none;
     color: black;
 }
-.ul-character a:hover{
+.ul-face a:hover{
     text-decoration: underline;
     color: blue;
 }
 
-.ul-character .li-expression{
+.ul-face .li-expression{
     display: none;
 }
-.lan{
-    margin-top: 20px;
-}
-.lan span{
-    margin-left:50px;
-}
-.lan a{
-    margin-left: 410px;
-}
-.lan a:link{
-    text-decoration: none;
-    color: black;
-}
-.lan a:hover{
-    text-decoration: underline;
-    color: blue;
-}
-.lan-photo{
-    width: 546px;
-    height: 180px;
-    border:1px solid blue;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.ul-framework{
-    width: 546px;
-    height: 180px;
-    list-style-type: none;
-    border:1px solid blue;
-    padding-left: 0px;
-    margin-top: 0px;
-}
-.ul-framework li{
-    width:180px;
-    height:180px;
-    float: left;
-    border: 1px solid cadetblue;
-}
-.ul-framework img{
-    width: 150px;
-    height: 150px;
-    margin-left: 15px;
-}
-.ul-framework a{
-    font-size: 12pt;
-    margin-left: 70px;
-}
-.ul-framework a:link{
-    text-decoration: none;
-    color: black;
-}
-.ul-framework a:hover{
-    text-decoration: underline;
-    color: blue;
-}
-.ul-framework .li-expression{
-    display: none;
-}
+/*.lan{*/
+    /*margin-top: 20px;*/
+    /*display: block;*/
+/*}*/
+/*.lan span{*/
+    /*margin-left: 30px;*/
+/*}*/
+/*.lan a{*/
+    /*float: right;*/
+    /*margin-right:23px;*/
+/*}*/
+/*.lan a:link{*/
+    /*text-decoration: none;*/
+    /*color: black;*/
+/*}*/
+/*.lan a:hover{*/
+    /*text-decoration: underline;*/
+    /*color: blue;*/
+/*}*/
+/*.lan-photo{*/
+    /*width: 546px;*/
+    /*height: 180px;*/
+    /*border:1px solid blue;*/
+    /*margin-left: 30px;*/
+    /*margin-top: 10px;*/
+/*}*/
+/*.ul-framework{*/
+    /*width: 546px;*/
+    /*height: 180px;*/
+    /*list-style-type: none;*/
+    /*border:1px solid blue;*/
+    /*padding-left: 0px;*/
+    /*margin-top: 0px;*/
+/*}*/
+/*.ul-framework li{*/
+    /*width:180px;*/
+    /*height:180px;*/
+    /*float: left;*/
+    /*border: 1px solid cadetblue;*/
+    /*text-align: center;*/
+/*}*/
+/*.ul-framework img{*/
+    /*width: 150px;*/
+    /*height: 150px;*/
+/*}*/
+/*.ul-framework a{*/
+    /*font-size: 12pt;*/
+/*}*/
+/*.ul-framework a:link{*/
+    /*text-decoration: none;*/
+    /*color: black;*/
+/*}*/
+/*.ul-framework a:hover{*/
+    /*text-decoration: underline;*/
+    /*color: blue;*/
+/*}*/
+/*.ul-framework .li-expression{*/
+    /*display: none;*/
+/*}*/
+

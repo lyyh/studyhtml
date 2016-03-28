@@ -1,0 +1,28 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.div1{
+    border: 1px solid red;
+    background-color: #1b6d85;
+}
+.div1-spe{
+    width: 150px;
+    height: 150px;
+}
+#div2{
+    float: right; /*将该元素尽量往父元素的右边界靠拢*/
+}
+.div4{
+    border: 1px solid black;
+    background-color: #8c8c8c;
+
+}
+
+.div1,.div4{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
