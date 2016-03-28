@@ -1,0 +1,131 @@
+body{
+    width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.bo-child{
+    width: 600px;
+    height: 800px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border: 1px solid blue;
+}
+/*相关人物和展开*/
+.per{
+    margin-top: 5px;
+}
+.per span{
+    margin-left: 50px;
+}
+.per a{
+    margin-left: 410px;
+}
+.per a:link{
+    text-decoration: none;
+    color: black;
+}
+.per a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.per-photo{
+    width: 545px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+.ul-character{
+    width: 546px;
+    height: 180px;
+    list-style-type: none;
+    border:1px solid blue;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.ul-character li{
+    width:180px;
+    height:180px;
+    float: left;
+    border: 1px solid cadetblue;
+}
+.ul-character img{
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+}
+.ul-character a{
+    font-size: 12pt;
+    margin-left: 70px;
+}
+.ul-character a:link{
+    text-decoration: none;
+    color: black;
+}
+.ul-character a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.ul-character .li-expression{
+    display: none;
+}
+.lan{
+    margin-top: 20px;
+}
+.lan span{
+    margin-left:50px;
+}
+.lan a{
+    margin-left: 410px;
+}
+.lan a:link{
+    text-decoration: none;
+    color: black;
+}
+.lan a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.lan-photo{
+    width: 546px;
+    height: 180px;
+    border:1px solid blue;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.ul-framework{
+    width: 546px;
+    height: 180px;
+    list-style-type: none;
+    border:1px solid blue;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.ul-framework li{
+    width:180px;
+    height:180px;
+    float: left;
+    border: 1px solid cadetblue;
+}
+.ul-framework img{
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+}
+.ul-framework a{
+    font-size: 12pt;
+    margin-left: 70px;
+}
+.ul-framework a:link{
+    text-decoration: none;
+    color: black;
+}
+.ul-framework a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.ul-framework .li-expression{
+    display: none;
+}
