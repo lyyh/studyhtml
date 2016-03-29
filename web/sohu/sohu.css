@@ -1,0 +1,99 @@
+body{
+    width: 800px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    font-size: 12px;
+    /*background-color: pink;*/
+}
+/*页面头部*/
+.top{
+    height: 25px;
+    background-color:#a6e1ec;
+}
+/*登陆部分*/
+.login{
+    width: 328px;
+    height: 25px;
+    background-color: #5cb85c;
+    /*display: inline-block;*/
+    float: left;
+}
+/*设为导航*/
+.index-page{
+    width: 100px;
+    height: 25px;
+    background-color: orange;
+    /*display: inline-block;*/
+    float: left;
+    margin-left: 50px;
+}
+/*超链接*/
+.my-href{
+    width: 200px;
+    height: 25px;
+    background-color: #5cb85c;
+    float: right;
+    /*margin-rui: 30px;*/
+}
+/*logo*/
+.logo img{
+    width: 140px;
+    height: 75px;
+    float: left;
+    margin-top: 4px;
+}
+/*导航栏*/
+.navi{
+    width: 656px;
+    height: 76px;
+    margin-top: 4px;
+    margin-left: 4px;
+    background-color: #c0a16b;
+    float: left;
+    box-shadow: 1px 1px 1px black;
+}
+/*广告*/
+.ad{
+    width: 800px;
+    height: 200px;
+    margin-top: 4px;
+    /*background-color: #bce8f1;*/
+    float: left;
+    border: 1px solid silver;
+}
+.spe-ad{
+    height:185px ;
+    float: left;
+}
+/*招生广告*/
+.stu-ad{
+    width: 115px;
+    margin:5px 0 0 4px;
+    background-color: #adadad;
+}
+/*广告2*/
+.ad2{
+    width: 320px;
+    margin: 5px 0 0 25px;
+    background-color: royalblue;
+}
+/*房地产广告*/
+.hou-ad{
+    width: 150px;
+    margin: 5px 0 0 20px;
+    background-color: #d6e9c6;
+}
+/*图片广告*/
+.pic-ad{
+    width: 150px;
+    height: 200px;
+    float: right;
+    border-left: 1px solid silver;
+    /*border: 1px solid silver;*/
+    /*background-color: #dca7a7;*/
+}
+.pic-ad img{
+    width: 130px;
+    height: 180px;
+    margin: 10px;
+}

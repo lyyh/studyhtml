@@ -11,11 +11,11 @@ function foldAndUnfold(val,eqVal){
     if(sit=="none"){
         //$(".li-expression:lt(ltVal)").css('display','block');
         $(".li-expression:"+val).css('display','block');
-        $(".title a:eq(eqVal)").html("收起");
+        $(".title a:eq("+eqVal+")").html("收起");
     }else if(sit=="block"){
         //$(".li-expression:lt(ltVal)").css('display','none');
         $(".li-expression:"+val).css('display','none');
-        $(".title a:eq(eqVal)").html("展开");
+        $(".title a:eq("+eqVal+")").html("展开");
     }
     //}
     //$("#id")[0].style.display="none";

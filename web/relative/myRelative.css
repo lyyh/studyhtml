@@ -1,0 +1,86 @@
+/*通配符选择器*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    border: 1px solid black;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+.div1{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    background-color: #d5d5d5;
+    margin-left: 10px;
+    float: left;
+}
+.div2{
+    width:300px;
+    height: 200px;
+    background-color: #c1e2b3;
+    float: left;
+    position: relative;
+    left:100px;
+    top:200px;
+}
+.div2 div{
+    width: 50px;
+    height: 50px;
+    background-color:blue;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.sp{
+    position: relative;
+    left: 100px;/*相对于原来的位置向右移动了100px,*/
+    top: 400px;/*相对于原来的位置向下移动了400px*/
+}
+.sp1{
+    position: absolute;
+    left: 0px;
+    top: 200px;
+}
+.sp1 div {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    left: 50px;
+    top:10px;
+}
+.sp2{
+    position:fixed;
+    left: 40px;
+    top:100px;
+}
+
+.font1{
+    color: red;
+}
+.font2{
+    color: blue;
+}
+.div1 span{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.ddiv{
+    background-color: red;
+    float: left;
+}
+.div3{
+    width: 50px;
+    height: 50px;
+    background-color: #1b6d85;
+    float: left;
+}
+.div3 div{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+}

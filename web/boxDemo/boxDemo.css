@@ -35,11 +35,11 @@ body {
 }
 .photo{
     width: 545px;
-    /*height: 200px;*/ /*?????*/
+    height: 200px;
     margin-top: 10px;
     margin-left: 30px;
     /*border: 1px solid black;*/
-    overflow: hidden; /*隐藏浮动*/
+    /*overflow: hidden; /!* 清除浮动*!/*/
 }
 .ul-face{
     width: 546px;
